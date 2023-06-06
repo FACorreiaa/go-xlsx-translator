@@ -1,12 +1,12 @@
 # Excel Translator
 
-The Excel Translator is a Go program that translates the values in the second column of an Excel file (XLSX). It utilizes the Azure Translation API to perform the translations. The translated values are then updated in the Excel file.
+The Excel Translator is a Python program that translates the values in the second column of an Excel file (XLSX). It utilizes the Azure Translation API to perform the translations. The translated values are then updated in the Excel file.
 
 ## Prerequisites
 
 Before running the program, ensure that you have the following:
 
-- Go programming language installed
+- Python programming language installed
 - Azure Translation API subscription key
 - Input Excel file (XLSX) with data in the first sheet
 
@@ -16,8 +16,8 @@ Before running the program, ensure that you have the following:
 
 ```shell
 git clone https://github.com/FACorreiaa/go-xlsx-translator
-cd go-xlsx-translator
-go get github.com/tealeg/xlsx
+pip3 install openpyxl
+python3 translator.py
 ```
 
 ## Usage
@@ -29,7 +29,7 @@ go get github.com/tealeg/xlsx
 - Run the program:
 
 ```shell
-go run main.go
+python3 translator.py
 ```
 
 - The translated values will be updated in the second column of the input Excel file.
